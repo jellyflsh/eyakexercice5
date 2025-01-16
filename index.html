@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercice 5</title>
+</head>
+<body>
+  <header>
+    <div class="logo">Logo</div>
+    <nav class="desktop-menu">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum suscipit neque, eu fermentum augue pellentesque eu.</p>
+      <div class="image-placeholder" style="width: 600px; height: 400px;">600 × 400</div>
+    </section>
+    <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum suscipit neque, eu fermentum augue pellentesque eu.</p>
+      <div class="image-placeholder" style="width: 600px; height: 200px;">600 × 200</div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Votre entreprise. Tous droits réservés.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.mobile-menu');
+      menu.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
